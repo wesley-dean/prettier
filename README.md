@@ -4,14 +4,14 @@ This exists because I greatly dislike installing and running tools on
 my local system.  Dependencies are a mess, versions are ugly, keeping
 things up to date is tiring.  It's all distasteful.
 
-Therefore, because my linters (shout out to MegaLinter!!) want me to
+Therefore, because my linters (shout out to MegaLinter!) want me to
 keep my YAML, JSON, etc. files nice and pretty, I use prettier
 fairly regularly.  Because I don't want to install and manage Node,
 npm, nvm, etc., this containerized version of Prettier now exists.
 
 While searching around DockerHub, I found that several folks did
 the same thing; however, I also saw that they hadn't been updated
-in months or years.  However, I also saw the the most recent
+in months or years.  However, I also saw the most recent
 version of Prettier was released (as of the time of this writing)
 three days ago.  So, the old Prettier images are out of date.
 
