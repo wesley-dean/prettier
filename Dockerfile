@@ -4,11 +4,13 @@ ENV RUNNER="runner"
 
 ENV PRETTIER_VERSION="2.8.6"
 
+COPY package.json .
+
 RUN \
-  npm install --global prettier@${PRETTIER_VERSION} \
+  npm install \
   && ( getent passwd "${RUNNER}" || adduser --disabled-password "${RUNNER}" )
 
 
-ENTRYPOINT ["prettier"]
+ENTRYPOINT ["/node_modules/.bin/prettier"]
 USER "${RUNNER}"
 HEALTHCHECK NONE

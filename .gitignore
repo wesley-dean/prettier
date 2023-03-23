@@ -4,4 +4,4 @@ megalinter-reports/
 reports/
 .scannerwork
 .travis.yml
-
+node_modules

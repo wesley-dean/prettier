@@ -1,0 +1,13 @@
+{
+  "name": "containerized-prettier",
+  "version": "0.0.1",
+  "description": "This is a containerized Prettier installation",
+  "license": "See license in CONTRIBUTING.md",
+  "repository": "https://github.com/wesley-dean-flexion/prettier",
+  "scripts": {
+    "format": "prettier --write \"./**/*.{js,jsx,json,vue,md,css}\""
+  },
+  "dependencies": {
+    "prettier": "^2.8.6"
+  }
+}
