@@ -59,7 +59,6 @@ The image is built and published to several public registries for your convenien
 * DockerHub: docker.io/wesleydeanflexion/prettier:latest
 * GitHub Container Registry: ghcr.io/flexion/prettier:latest
 
-
 ### Running as an alias
 
 Including this line in your shell configuration file (e.g., .bashrc)
@@ -69,4 +68,3 @@ without installing Prettier on your local system.
 ```sh
 alias prettier='docker run -it --rm -u "$(id --user)" -v "${PWD}:${PWD}" -w "${PWD}" docker.io/wesleydeanflexion/prettier:latest'
 ```
-
