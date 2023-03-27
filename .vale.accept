@@ -1,0 +1,5 @@
+(?i)pull[[:space:]]*request
+(?i)dependabot
+(?i)n[pv]m
+(?i)podman
+(?i)dockerfile
