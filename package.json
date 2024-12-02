@@ -8,6 +8,6 @@
     "format": "prettier --write \"./**/*.{js,jsx,json,vue,md,css}\""
   },
   "dependencies": {
-    "prettier": "^2.8.6"
+    "prettier": "^3.4.1"
   }
 }
