@@ -30,7 +30,7 @@ jobs:
         run: |
           (
             echo "VERSION=\"$(jq -r '.dependencies.prettier | sub("^[^[:digit][Vv]]*"; "v")' < package.json)\""
-          ) >> $GITHUB_OUTPUT
+          ) >> "$GITHUB_OUTPUT"
 
       - name: "Generate release notes"
         id: "release_notes"
