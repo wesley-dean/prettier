@@ -2,8 +2,6 @@ FROM node:slim
 
 ENV RUNNER="runner"
 
-ENV PRETTIER_VERSION="2.8.6"
-
 WORKDIR /
 COPY package.json .
 
