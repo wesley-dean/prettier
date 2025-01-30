@@ -29,7 +29,7 @@ jobs:
         shell: "bash"
         run: |
           (
-            echo "VERSION=\"$(jq -r '.dependencies.prettier | sub("^[^[:digit][Vv]]*"; "v")' < package.json)\""
+          echo "VERSION=\"$(jq -r '.dependencies.prettier | sub("^[^[:digit:][Vv]]*"; "v")' < package.json)\""
           ) >> "$GITHUB_OUTPUT"
 
       - name: "Generate release notes"
@@ -46,3 +46,4 @@ jobs:
           artifacts: "release.tar.gz,foo/*.txt"
           body: "${{ steps.release_notes.outputs.release_notes }}"
           tag: "${{ steps.customvars.outputs.VERSION }}"
+          allowUpdates: true
