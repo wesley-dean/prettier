@@ -29,7 +29,7 @@ jobs:
         shell: "bash"
         run: |
           (
-            echo "VERSION=\"$("jq -r '.dependencies.prettier | sub("^[^[:digit][Vv]]*"; "v")'")\""
+            echo "VERSION=\"$(jq -r '.dependencies.prettier | sub("^[^[:digit][Vv]]*"; "v")' < package.json)\""
           ) >> $GITHUB_OUTPUT
 
       - name: "Generate release notes"
