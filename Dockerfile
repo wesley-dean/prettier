@@ -1,4 +1,4 @@
-FROM node:slim
+FROM node:23.11.0-slim
 
 ENV RUNNER="runner"
 
