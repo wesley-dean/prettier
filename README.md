@@ -19,7 +19,7 @@ Because I can automate the building and pushing of images to
 DockerHub and GHCR and I can automate the updating of the
 Docker and npm configurations (via Dockerfile and package.json,
 respectively) via the Pull Request process initiated by
-Dependabot, my hope is that this image will be rebuilt regularly
+centrally managed Renovate, my hope is that this image will be rebuilt regularly
 and remain reasonably current, particularly with regards to
 potential security concerns.
 
